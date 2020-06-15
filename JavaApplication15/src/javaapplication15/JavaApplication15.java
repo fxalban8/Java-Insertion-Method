@@ -32,7 +32,7 @@ public class JavaApplication15 {
     
     public static void main(String[] args) {
         // TODO code application logic here
-        
+        double start_time= System.nanoTime();
         int array1[] = {29,34,23,45,6};
         
         ordenarArregloPorInsercion(array1);
@@ -40,5 +40,6 @@ public class JavaApplication15 {
         for(int i: array1){
             System.out.print(i+" ");
         }
+        System.out.println("\n"+(System.nanoTime()-start_time));
     }
 }
