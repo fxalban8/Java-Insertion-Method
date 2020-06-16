@@ -5,6 +5,8 @@
  */
 package javaapplication15;
 
+import java.util.Arrays;
+
 /**
  *
  * @author dell
@@ -27,6 +29,23 @@ public class JavaApplication15 {
             arreglo[pos]=aux;
         }
     }
+    public static String arreglarporbuble(int[] arregdesord){
+        int vartemp=0;
+        
+		for(int i=0;i<arregdesord.length-1;i++) {
+			for(int j=0;j<arregdesord.length-i-1;j++) {
+				if(arregdesord[j]>arregdesord[j+1]) {
+					vartemp=arregdesord[j];
+					arregdesord[j]=arregdesord[j+1];
+					arregdesord[j+1]=vartemp;
+				}
+			}
+			
+			
+		}
+		return Arrays.toString(arregdesord);
+    }
+    
     
     public static void main(String[] args) {
         // TODO code application logic here
